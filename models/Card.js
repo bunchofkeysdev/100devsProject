@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 
-const TodoSchema = new mongoose.Schema({
-  todo: {
+const CardSchema = new mongoose.Schema({
+  front: {
     type: String,
     required: true,
   },
-  completed: {
-    type: Boolean,
+  back: {
+    type: String,
     required: true,
   },
   userId: {
@@ -15,4 +15,4 @@ const TodoSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('Todo', TodoSchema)
+module.exports = mongoose.model('Card', CardSchema)
