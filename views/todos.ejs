@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <h1>Todos</h1>
     <ul>
-    <% todos.forEach( el => { %>
+        <% cards.forEach( el=> { %>
             <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.card %></span>
+                <span>
+                    <%= el.front %>
+                </span>
                 <span class='del'> Delete </span>
             </li>
-    <% }) %>    
+            <% }) %>
     </ul>
 
-    <h2><%= user.userName %> has <%= left %> card(s) left to review.</h2>
+
 
     <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Front of Card" name='frontOfCard'>
@@ -30,4 +34,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
