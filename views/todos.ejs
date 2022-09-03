@@ -12,16 +12,17 @@
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.card %></span>
                 <span class='del'> Delete </span>
             </li>
     <% }) %>    
     </ul>
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+    <h2><%= user.userName %> has <%= left %> card(s) left to review.</h2>
 
     <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        <input type="text" placeholder="Front of Card" name='frontOfCard'>
+        <input type="text" placeholder="Back of Card" name='backOfCard'>
         <input type="submit">
     </form>
 
