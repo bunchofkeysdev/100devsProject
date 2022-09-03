@@ -1,4 +1,4 @@
-const Todo = require('../models/Todo')
+const Todo = require('../models/Card')
 
 module.exports = {
     getTodos: async (req,res)=>{
