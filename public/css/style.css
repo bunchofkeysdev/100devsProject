@@ -2,9 +2,26 @@ body {
     background-color: rgb(17, 16, 16);
 }
 .headline {
+    position: absolute;
+    top: 200px;
     color: white;
     padding: 50px;
- 
+    font-size: 60px;
+}
+h2 {
+    position: absolute;
+    top:20px;
+    px;
+    color: white;
+    padding: 50px;
+    font-size: 60px;
+}
+h3 {
+    position: absolute;
+    top: 80px;
+    color: white;
+    padding: 50px;
+    font-size: 60px;
 }
 
 .section--top {
@@ -17,25 +34,36 @@ body {
 }
 
 .img--100devs {
-    top: 0;
-    margin-top: 40px;
+    position: absolute;
+    top: 400px;
+    
 }
 
 .img--flashcards {
-    bottom: 0;
-    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0; 
 }
 
 .login {
-    color: white;
-    text-decoration: none;
-    padding: 50px;
-    font-size: larger;
+    display: inline-block;
+            padding: 10px 30px;
+            background-color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #333;
+            font-weight: 600;
+            border: 1px solid transparent;
+            transition: 0.5s;
 }
 .signup {
-    color: white;
-    text-decoration: none;
-    font-size: larger;
+    padding: 10px 30px;
+            background-color: rgb(231, 34, 34);
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #333;
+            font-weight: 600;
+            border: 1px solid transparent;
+            transition: 0.5s;
 }
 .completed {
     text-decoration: line-through;
@@ -45,5 +73,7 @@ body {
     text-decoration: underline;
 }
 
-
-
+/* .login-sec {
+  
+    text-align: center;
+} */

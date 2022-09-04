@@ -1,3 +1,3 @@
-// const canvas = document.querySelector('#drawingCanvas');
+const canvas = document.querySelector('#drawingCanvas');
 
-// console.log(window);
+console.log(window);
