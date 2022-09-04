@@ -1,10 +1,49 @@
-h1{
-    color: red;
+body {
+    background-color: rgb(17, 16, 16);
 }
-.completed{
+.headline {
+    color: white;
+    padding: 50px;
+ 
+}
+
+.section--top {
+    height: 100vh;
+}
+
+.img--logo {
+    width: 95vw;
+    position: absolute;
+}
+
+.img--100devs {
+    top: 0;
+    margin-top: 40px;
+}
+
+.img--flashcards {
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    font-size: larger;
+}
+.signup {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.completed {
     text-decoration: line-through;
     color: gray;
 }
 .not{
     text-decoration: underline;
 }
+
+
+

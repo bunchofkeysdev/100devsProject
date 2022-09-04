@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Create Your VERY OWN Todolist!</h1>
-    <a href="/login"> Login</a>
-    <a href="/signup"> Signup</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100devs Flash Cards</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="section--top">
+      <img
+        class="img--logo img--100devs"
+        src="https://i.imgur.com/737IYJO.png"
+        alt="100Devs"
+      />
+      <img
+        class="img--logo img--flashcards"
+        src="https://i.imgur.com/LQ1pVxm.png"
+        alt="Flash cards"
+      />
+      <canvas id="drawingCanvas"></canvas>
+      <h1 class="headline">This isn't ANKI but you can take it to the BANKI!</h1>
+       <section class="login-sec">
+          <a href="/login" class="login"> Login</a>
+          <a href="/signup" class="signup"> Signup</a>
+        </section>
+        <script src="../public/js/main.js"></script>
+  </body>
 </html>
