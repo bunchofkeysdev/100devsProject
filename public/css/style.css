@@ -1,77 +1,78 @@
 body {
-    background-color: rgb(17, 16, 16);
+  background-color: rgb(17, 16, 16);
+  color: #fff;
 }
 .headline {
-    position: absolute;
-    top: 200px;
-    color: white;
-    padding: 50px;
-    font-size: 60px;
+  position: absolute;
+  top: 200px;
+  color: white;
+  padding: 50px;
+  font-size: 60px;
 }
 h2 {
-    position: absolute;
-    top:20px;
-    px;
-    color: white;
-    padding: 50px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  color: white;
+  padding: 50px;
+  font-size: 60px;
 }
 h3 {
-    position: absolute;
-    top: 80px;
-    color: white;
-    padding: 50px;
-    font-size: 60px;
+  position: absolute;
+  top: 80px;
+  color: white;
+  padding: 50px;
+  font-size: 60px;
 }
 
 .section--top {
-    height: 90vh;
+  height: 90vh;
 }
 
 .img--logo {
-    width: 95vw;
-    position: absolute;
+  width: 95vw;
+  position: absolute;
 }
 
 .img--100devs {
-    position: absolute;
-    top: 400px;
-    
+  position: absolute;
+  top: 400px;
 }
 
 .img--flashcards {
-    position: absolute;
-    bottom: 0; 
+  position: absolute;
+  bottom: 0;
 }
 
 .login {
-    display: inline-block;
-            padding: 10px 30px;
-            background-color: #fff;
-            font-size: 15px;
-            text-transform: uppercase;
-            color: #333;
-            font-weight: 600;
-            border: 1px solid transparent;
-            transition: 0.5s;
-            top: 50px;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  top: 50px;
 }
 .signup {
-    padding: 10px 30px;
-            background-color: rgb(231, 34, 34);
-            font-size: 15px;
-            text-transform: uppercase;
-            color: #333;
-            font-weight: 600;
-            border: 1px solid transparent;
-            transition: 0.5s;
+  padding: 10px 30px;
+  background-color: rgb(231, 34, 34);
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+li {
+  border: 4px solid limegreen;
 }
 .completed {
-    text-decoration: line-through;
-    color: gray;
+  color: transparent;
 }
-.not{
-    text-decoration: underline;
+.not {
+  color: white;
 }
 
 /* .login-sec {
