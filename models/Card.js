@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const CardSchema = new mongoose.Schema({
   front: {
@@ -9,8 +9,17 @@ const CardSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  completed: {
+    type: Boolean,
+    required: true,
+  },
   userId: {
     type: String,
+<<<<<<< HEAD
+    required: true,
+  },
+});
+=======
     required: true
   },
   easy: {
@@ -23,5 +32,6 @@ const CardSchema = new mongoose.Schema({
   }
 
 })
+>>>>>>> master
 
-module.exports = mongoose.model('Card', CardSchema)
+module.exports = mongoose.model('Card', CardSchema);
