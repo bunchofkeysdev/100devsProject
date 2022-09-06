@@ -5,12 +5,12 @@ const { ensureAuth } = require('../middleware/auth');
 
 router.get('/', ensureAuth, cardsController.getCards);
 
-router.post('/createCard', cardsController.createCards);
+router.post('/createCard', cardsController.createCard);
 
 router.put('/markComplete', cardsController.markComplete);
 
 router.put('/markIncomplete', cardsController.markIncomplete);
 
-router.delete('/deleteCard', cardsController.deleteCards);
+router.delete('/deleteCard', cardsController.deleteCard);
 
 module.exports = router;

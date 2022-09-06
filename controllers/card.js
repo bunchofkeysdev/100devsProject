@@ -1,24 +1,24 @@
-const Card = require('../models/Card');
+const card = require('../models/Card');
 
 module.exports = {
   getCards: async (req, res) => {
     console.log(req.user);
     try {
-      const cardItems = await Card.find({ userId: req.user.id });
+      const cardItems = await card.find({ userId: req.user.id });
       res.render('cards.ejs', { cards: cardItems, user: req.user });
     } catch (err) {
       console.log(err);
     }
   },
-  createCards: async (req, res) => {
+  createCard: async (req, res) => {
     try {
-      await Card.create({
+      await card.create({
         front: req.body.frontOfCard,
         back: req.body.backOfCard,
         completed: false,
         userId: req.user.id,
       });
-      console.log('Card has been added!');
+      console.log('card has been added!');
       res.redirect('/cards');
     } catch (err) {
       console.log(err);
@@ -26,7 +26,7 @@ module.exports = {
   },
   markComplete: async (req, res) => {
     try {
-      await Card.findOneAndUpdate(
+      await card.findOneAndUpdate(
         { _id: req.body.cardIdFromJSFile },
         {
           completed: true,
@@ -40,7 +40,7 @@ module.exports = {
   },
   markIncomplete: async (req, res) => {
     try {
-      await Card.findOneAndUpdate(
+      await card.findOneAndUpdate(
         { _id: req.body.cardIdFromJSFile },
         {
           completed: false,
@@ -52,10 +52,10 @@ module.exports = {
       console.log(err);
     }
   },
-  deleteCards: async (req, res) => {
+  deleteCard: async (req, res) => {
     console.log(req.body.cardIdFromJSFile);
     try {
-      await Card.findOneAndDelete({ _id: req.body.cardIdFromJSFile });
+      await card.findOneAndDelete({ _id: req.body.cardIdFromJSFile });
       console.log('Deleted card');
       res.json('Deleted It');
     } catch (err) {

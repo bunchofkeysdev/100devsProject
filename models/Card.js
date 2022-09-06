@@ -15,23 +15,8 @@ const CardSchema = new mongoose.Schema({
   },
   userId: {
     type: String,
-<<<<<<< HEAD
     required: true,
   },
 });
-=======
-    required: true
-  },
-  easy: {
-    type: Boolean,
-    required: true,
-  },
-  hard: {
-    type: Boolean,
-    required: true,
-  }
-
-})
->>>>>>> master
 
 module.exports = mongoose.model('Card', CardSchema);
